@@ -53,3 +53,10 @@ maxmemory_human:5.00M
 maxmemory_policy:allkeys-lru
 mem_fragmentation_ratio:0.95
 mem_allocator:jemalloc-3.6.0
+
+
+在Redis3.x使用以下配置会起服报错：
+lazyfree-lazy-eviction no
+lazyfree-lazy-expire no
+lazyfree-lazy-server-del no
+slave-lazy-flush no
